@@ -1,0 +1,28 @@
+.app-container {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .navbar-container {
+        background-color: yellow;
+        height: 8%;
+    }
+
+    .content-container {
+        background-color: black;
+        display: flex;
+        flex: 2;
+        flex-direction: row;
+
+        .left {
+            background-color: #CCCCCC;
+            width: 20%;
+        }
+
+        .right {
+            background-color: #555555;
+            flex: 2;
+        }
+    }
+}

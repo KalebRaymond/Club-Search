@@ -1,5 +1,35 @@
 .card {
-    background-color: green;
-    height: 100px;
-    width: 100px;
+    background-color: #c4c4c4;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px #555555;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+    height: 100%;
+    width: 100%;
+
+    .club-icon {
+        border-radius: 100%;
+        margin: 5px auto;
+    }
+
+    .club-title-container {
+        padding: 5px 0px;
+        text-align: center;
+
+        span {
+            font-size: 12pt;
+            font-weight: 700;
+        }
+    }
+
+    .club-desc-container {
+        padding: 10px;
+
+        p {
+            font-size: 10pt;
+            margin: 0px;
+            text-align: center;
+        }
+    }
 }

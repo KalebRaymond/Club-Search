@@ -1,5 +1,4 @@
 .app-container {
-    background-color: blue;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -10,7 +9,6 @@
     }
 
     .content-container {
-        background-color: black;
         display: flex;
         flex: 2;
         flex-direction: row;
@@ -21,7 +19,6 @@
         }
 
         .right {
-            background-color: #555555;
             flex: 2;
         }
     }

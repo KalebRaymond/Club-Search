@@ -4,7 +4,7 @@
     height: 100vh;
 
     .navbar-container {
-        background-color: yellow;
+        flex-shrink: 0;
         height: 8%;
     }
 

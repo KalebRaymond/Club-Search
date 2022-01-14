@@ -1,12 +1,32 @@
 .navbar {
-    border: 1px solid blue;
+    background-color: #000;
     height: 100%;
 
-    a {
-        background-color: #AAAAAA;
-        display: inline-block;
+    ul {
         height: 100%;
-        width: auto;
-        margin: 0px 10px;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            height: 100%;
+            margin: 0px 10px;
+
+            a {
+                align-items: center;
+                display: flex;
+                color: #fff;
+                height: 100%;
+    
+                &:hover {
+                    background-color: #444;
+                    cursor: pointer;
+                }
+
+                span {
+                    margin: 0rem 1rem;
+                }
+            }
+        }
     }
 }

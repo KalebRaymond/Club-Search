@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchPanelComponent } from './search-panel/search-panel.component';
 import { ClubsContainerComponent } from './clubs-container/clubs-container.component';
 import { ClubCardComponent } from './club-card/club-card.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ClubCardComponent } from './club-card/club-card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,23 @@
+form {
+    .search-bar-container {
+        align-content: center;
+        border: 1px solid red;
+        display: flex;
+        padding: 1rem;
+
+        .search-bar {
+            background: none;
+            border: none;
+            border-bottom: 3px solid black;
+            color: black;
+        }
+    }
+
+    .categories-container {
+        border: 1px solid blue;
+    }
+
+    .sort-options-container {
+        border: 1px solid green; 
+    }
+}

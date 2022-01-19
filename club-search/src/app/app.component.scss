@@ -7,13 +7,26 @@
         flex-shrink: 0;
         height: 8%;
         max-height: 8%;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .search-container {
+        background-color: red;
+        flex-shrink: 0;
+        height: 8%;
+        max-height: 8%;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
 
     .content-container {
         display: flex;
         flex: 2;
         flex-direction: row;
-        max-height: 92%;
+        max-height: 84%;
 
         .left {
             background-color: #CCCCCC;

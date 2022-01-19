@@ -1,7 +1,6 @@
 form {
     .search-bar-container {
         align-content: center;
-        border: 1px solid red;
         display: flex;
         padding: 1rem;
 
@@ -13,11 +12,40 @@ form {
         }
     }
 
-    .categories-container {
-        border: 1px solid blue;
+    .card {
+        background-color: #333;
+        border-radius: 0px;
+
+        .card-header {
+            padding: 1rem;
+
+            h5 {
+                button {
+                    color: #fff;
+                    padding: 0px;
+                }
+            }
+        }
     }
 
-    .sort-options-container {
-        border: 1px solid green; 
+    .card-body {
+        background-color: #eee;
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+
+            li {
+                display: block;
+
+                .checkbox {
+                    margin-right: .75rem;
+                }
+
+                label {
+                    margin-bottom: .25rem;
+                }
+            }
+        }
     }
 }

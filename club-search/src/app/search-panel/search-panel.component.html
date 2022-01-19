@@ -3,84 +3,89 @@
         <input class="search-bar" type="text" placeholder="Search clubs">
         <!-- X to clear here -->
     </div>
-    <div id="search-options" class="accordion accordion-flush">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Categories
-                </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#search-options">
-                <div class="accordion-body">
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="academic" value="academic">
-                            <label for="academic">Academic</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="advocacy" value="advocacy">
-                            <label for="advocay">Advocacy</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="art" value="Arts & Literature">
-                            <label for="art">Arts & Literature</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="competitive" value="competitive">
-                            <label for="competitive">Competitive Club Sports</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="cultural" value="cultural">
-                            <label for="cultural">Ethnic & Cultural</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="greek" value="greek">
-                            <label for="greek">Greek Life</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="honorary" value="honorary">
-                            <label for="honorary">Honorary</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="recreation" value="recreation">
-                            <label for="recreation">Recreational Club Sport</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="service" value="service">
-                            <label for="service">Service</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="special" value="special">
-                            <label for="special">Special Interest</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="spiritual" value="spiritual">
-                            <label for="spiritual">Spirituality & Faith</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="government" value="government">
-                            <label for="government">Student Government</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="university" value="university">
-                            <label for="university">University Program</label>
-                        </li>
-                    </ul>
-                </div>
+
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Categories
+                    </button>
+                </h5>
             </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Filters
-                </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#search-options">
-                <div class="accordion-body">
-                    <span>Sort</span>
-                    <button>Alphabetical</button>
-                    <button>Popular</button>
-                </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                <ul>
+                    <li>
+                        <input class="checkbox" type="checkbox" name="academic" value="academic">
+                        <label for="academic">Academic</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" type="checkbox" name="advocacy" value="advocacy">
+                        <label for="advocacy">Advocacy</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" type="checkbox" name="art" value="Arts & Literature">
+                        <label for="art">Arts & Literature</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" type="checkbox" name="competitive" value="competitive">
+                        <label for="competitive">Competitive Club Sports</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" type="checkbox" name="cultural" value="cultural">
+                        <label for="cultural">Ethnic & Cultural</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" type="checkbox" name="greek" value="greek">
+                        <label for="greek">Greek Life</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" type="checkbox" name="honorary" value="honorary">
+                        <label for="honorary">Honorary</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" type="checkbox" name="recreation" value="recreation">
+                        <label for="recreation">Recreational Club Sport</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" type="checkbox" name="service" value="service">
+                        <label for="service">Service</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" type="checkbox" name="special" value="special">
+                        <label for="special">Special Interest</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" type="checkbox" name="spiritual" value="spiritual">
+                        <label for="spiritual">Spirituality & Faith</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" type="checkbox" name="government" value="government">
+                        <label for="government">Student Government</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" type="checkbox" name="university" value="university">
+                        <label for="university">University Program</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Sort
+                    </button>
+                </h5>
+            </div>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                <button type="button" class="btn btn-sm btn-outline-primary">Alphabetical</button>
+                <button type="button" class="btn btn-sm btn-outline-primary">Popular</button>
             </div>
         </div>
     </div>

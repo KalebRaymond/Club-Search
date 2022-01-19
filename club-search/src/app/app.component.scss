@@ -4,7 +4,6 @@
     height: 100vh;
 
     .navbar-container {
-        flex-shrink: 0;
         height: 8%;
         max-height: 8%;
         position: sticky;
@@ -13,8 +12,6 @@
     }
 
     .search-container {
-        background-color: red;
-        flex-shrink: 0;
         height: 8%;
         max-height: 8%;
         position: sticky;

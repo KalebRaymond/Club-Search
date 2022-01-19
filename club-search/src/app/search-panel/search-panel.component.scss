@@ -1,51 +1,75 @@
-form {
-    .search-bar-container {
-        align-content: center;
+nav {
+    background-color: #001261;
+    height: 100%;
+    padding: 0px;
+
+    .form-container {
         display: flex;
-        padding: 1rem;
+        flex-grow: 2;
+        height: 100%;
+    
+        .search-bar-container {
+            align-content: center;
+            padding: .5rem;
+            padding-left: 1rem;
+            width: 50%;
+    
+            input{
+                border: none;
 
-        .search-bar {
-            background: none;
-            border: none;
-            border-bottom: 3px solid black;
-            color: black;
-        }
-    }
-
-    .card {
-        background-color: #333;
-        border-radius: 0px;
-
-        .card-header {
-            padding: 1rem;
-
-            h5 {
-                button {
-                    color: #fff;
-                    padding: 0px;
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
                 }
             }
         }
-    }
 
-    .card-body {
-        background-color: #eee;
+        .dropdown-container {
+            display: flex;
 
-        ul {
-            margin: 0px;
-            padding: 0px;
+            .dropdown {
+                display: flex;
 
-            li {
-                display: block;
+                > button {
+                    background: none;
+                    border: none;
+                    border-radius: 0px;
 
-                .checkbox {
-                    margin-right: .75rem;
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+
+                    &:hover {
+                        background-color: #71799e;
+                    }
                 }
 
-                label {
-                    margin-bottom: .25rem;
+                .dropdown-menu {
+                    border-top: none;
+                    border-top-left-radius: 0px;
+                    border-top-right-radius: 0px;
+                    margin: 0px;
+                    width: max-content;
+
+                    form {
+                        padding: 0rem 1rem;
+                    }
+
+                    ul {
+                        margin: 0px;
+                        padding: 0px;
+
+                        li {
+                            display: block;
+
+                            .checkbox {
+                                margin-right: .75rem;
+                            }
+                        }
+                    }
                 }
             }
-        }
+        }       
     }
 }

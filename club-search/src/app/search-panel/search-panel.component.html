@@ -1,92 +1,87 @@
-<form>
-    <div class="search-bar-container">
-        <input class="search-bar" type="text" placeholder="Search clubs">
-        <!-- X to clear here -->
-    </div>
+<nav class="navbar">
+    <form class="form-container">
+        <div class="search-bar-container input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                    <img src="/assets/img/search.svg">
+                </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Search organizations" aria-label="SearchOrganizations" aria-describedby="basic-addon1">
+        </div>
 
-    <div id="accordion">
-        <div class="card">
-            <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Categories
-                    </button>
-                </h5>
+        <div class="dropdown-container">
+            <div class="categories-container dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categories
+                </button>
+                <div class="dropdown-menu">
+                    <form>
+                        <ul>
+                            <li>
+                                <input class="checkbox" type="checkbox" name="academic" value="academic">
+                                <label for="academic">Academic</label>
+                            </li>
+                            <li>
+                                <input class="checkbox" type="checkbox" name="advocacy" value="advocacy">
+                                <label for="advocacy">Advocacy</label>
+                            </li>
+                            <li>
+                                <input class="checkbox" type="checkbox" name="art" value="Arts & Literature">
+                                <label for="art">Arts & Literature</label>
+                            </li>
+                            <li>
+                                <input class="checkbox" type="checkbox" name="competitive" value="competitive">
+                                <label for="competitive">Competitive Club Sports</label>
+                            </li>
+                            <li>
+                                <input class="checkbox" type="checkbox" name="cultural" value="cultural">
+                                <label for="cultural">Ethnic & Cultural</label>
+                            </li>
+                            <li>
+                                <input class="checkbox" type="checkbox" name="greek" value="greek">
+                                <label for="greek">Greek Life</label>
+                            </li>
+                            <li>
+                                <input class="checkbox" type="checkbox" name="honorary" value="honorary">
+                                <label for="honorary">Honorary</label>
+                            </li>
+                            <li>
+                                <input class="checkbox" type="checkbox" name="recreation" value="recreation">
+                                <label for="recreation">Recreational Club Sport</label>
+                            </li>
+                            <li>
+                                <input class="checkbox" type="checkbox" name="service" value="service">
+                                <label for="service">Service</label>
+                            </li>
+                            <li>
+                                <input class="checkbox" type="checkbox" name="special" value="special">
+                                <label for="special">Special Interest</label>
+                            </li>
+                            <li>
+                                <input class="checkbox" type="checkbox" name="spiritual" value="spiritual">
+                                <label for="spiritual">Spirituality & Faith</label>
+                            </li>
+                            <li>
+                                <input class="checkbox" type="checkbox" name="government" value="government">
+                                <label for="government">Student Government</label>
+                            </li>
+                            <li>
+                                <input class="checkbox" type="checkbox" name="university" value="university">
+                                <label for="university">University Program</label>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div class="sort-container dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sort
+                </button>
+                <div class="dropdown-menu">
+                    <form>
+                    </form>
+                </div>
             </div>
         </div>
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-                <ul>
-                    <li>
-                        <input class="checkbox" type="checkbox" name="academic" value="academic">
-                        <label for="academic">Academic</label>
-                    </li>
-                    <li>
-                        <input class="checkbox" type="checkbox" name="advocacy" value="advocacy">
-                        <label for="advocacy">Advocacy</label>
-                    </li>
-                    <li>
-                        <input class="checkbox" type="checkbox" name="art" value="Arts & Literature">
-                        <label for="art">Arts & Literature</label>
-                    </li>
-                    <li>
-                        <input class="checkbox" type="checkbox" name="competitive" value="competitive">
-                        <label for="competitive">Competitive Club Sports</label>
-                    </li>
-                    <li>
-                        <input class="checkbox" type="checkbox" name="cultural" value="cultural">
-                        <label for="cultural">Ethnic & Cultural</label>
-                    </li>
-                    <li>
-                        <input class="checkbox" type="checkbox" name="greek" value="greek">
-                        <label for="greek">Greek Life</label>
-                    </li>
-                    <li>
-                        <input class="checkbox" type="checkbox" name="honorary" value="honorary">
-                        <label for="honorary">Honorary</label>
-                    </li>
-                    <li>
-                        <input class="checkbox" type="checkbox" name="recreation" value="recreation">
-                        <label for="recreation">Recreational Club Sport</label>
-                    </li>
-                    <li>
-                        <input class="checkbox" type="checkbox" name="service" value="service">
-                        <label for="service">Service</label>
-                    </li>
-                    <li>
-                        <input class="checkbox" type="checkbox" name="special" value="special">
-                        <label for="special">Special Interest</label>
-                    </li>
-                    <li>
-                        <input class="checkbox" type="checkbox" name="spiritual" value="spiritual">
-                        <label for="spiritual">Spirituality & Faith</label>
-                    </li>
-                    <li>
-                        <input class="checkbox" type="checkbox" name="government" value="government">
-                        <label for="government">Student Government</label>
-                    </li>
-                    <li>
-                        <input class="checkbox" type="checkbox" name="university" value="university">
-                        <label for="university">University Program</label>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        Sort
-                    </button>
-                </h5>
-            </div>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-                <button type="button" class="btn btn-sm btn-outline-primary">Alphabetical</button>
-                <button type="button" class="btn btn-sm btn-outline-primary">Popular</button>
-            </div>
-        </div>
-    </div>
-</form>
+    </form>
+</nav>

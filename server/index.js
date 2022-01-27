@@ -1,6 +1,7 @@
 const bodyParser = require('body-parser');
 const config = require('./config');
 const express = require('express');
+const fs = require('fs');
 const mongoose = require('mongoose');
 const app = express();
 
@@ -30,5 +31,6 @@ require('./routes')(app);
 app.listen(config.port, () => console.log(`Club Search server listening on ${config.port}`))
 
 app.get('/clubs', function (req, res) {
-  res.send('Got clubs from backend')
+	let clubs = JSON.parse(fs.readFileSync('clubs/mock-clubs.json', 'utf8'));
+	res.json(clubs)
 })

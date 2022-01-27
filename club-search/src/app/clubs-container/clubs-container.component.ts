@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+
+import { environment } from 'src/environments/environment';
+import { IClub } from '../interfaces/club';
 
 @Component({
   selector: 'app-clubs-container',
@@ -8,14 +11,16 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class ClubsContainerComponent implements OnInit {
   infoPanelVisible: boolean = true;
-
+  clubs: IClub[] = [];
 
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
-    this.httpClient.get('http://localhost:8080/clubs', {responseType: 'text'})
+    //Get list of clubs from backend
+    this.httpClient.get<IClub[]>(`${environment.apiUrl}/clubs`)
     .subscribe(data => {
-      console.log(data);
+      this.clubs = data;
+      console.log(this.clubs);
     });
   }
 }

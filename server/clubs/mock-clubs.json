@@ -1,54 +1,50 @@
-{
-	"clubs" : [
-		{
-			"name" : "Chess Club",
-			"description" : "The Chess Club is the center of chess activity at the University of Pittsburgh",
-			
-		},
-		{
-			"name" : "Chinese Card Games Club",
-			"description" : "Come learn and play some really fun and competitive traditional Chinese card games with some cool people!",
-			
-		},
-		{
-			"name" : "Geology Club",
-			"description" : "The GeoClub is a community for students interested in the Earth Sciences, which include, but are not limited to, Geology, Environmental Science and Studies. It's a fun group of people who are enthusiastic about rocks, the Earth, and the environment! We do lab help, powerpoint nights, kahoot games, and go on adventures (as well as other things!)",
-			
-		},
-		{
-			"name" : "Kappa Delta Pi",
-			"description" : "Kappa Delta Pi is an International Honor Society in Education. Newly reinstalled at the University in April 2015, KDP is striving for excellence.  As the School of Education at Pitt continues to grow, we hope that this organization will grow with it as we make an impression not only on the University, but the community surrounding us.  Through volunteer and service projects we, as future teachers, hope to give back to our local children and gain experience as we tackle the field we want to one day make a difference with in our own classrooms.",
-			
-		},
-		{
-			"name" : "Math Club",
-			"description" : "The Math Club is an organization designed to bring together students of the mathematical sciences in an environment that allows them to pursue their collective interests!",
-			
-		},
-		{
-			"name" : "Chess Club",
-			"description" : "The Chess Club is the center of chess activity at the University of Pittsburgh",
-			
-		},
-		{
-			"name" : "Chinese Card Games Club",
-			"description" : "Come learn and play some really fun and competitive traditional Chinese card games with some cool people!",
-			
-		},
-		{
-			"name" : "Geology Club",
-			"description" : "The GeoClub is a community for students interested in the Earth Sciences, which include, but are not limited to, Geology, Environmental Science and Studies. It's a fun group of people who are enthusiastic about rocks, the Earth, and the environment! We do lab help, powerpoint nights, kahoot games, and go on adventures (as well as other things!)",
-			
-		},
-		{
-			"name" : "Kappa Delta Pi",
-			"description" : "Kappa Delta Pi is an International Honor Society in Education. Newly reinstalled at the University in April 2015, KDP is striving for excellence.  As the School of Education at Pitt continues to grow, we hope that this organization will grow with it as we make an impression not only on the University, but the community surrounding us.  Through volunteer and service projects we, as future teachers, hope to give back to our local children and gain experience as we tackle the field we want to one day make a difference with in our own classrooms.",
-			
-		},
-		{
-			"name" : "Math Club",
-			"description" : "The Math Club is an organization designed to bring together students of the mathematical sciences in an environment that allows them to pursue their collective interests!",
-			
-		}
-	]
-}
+[
+	{
+		"name" : "Chess Club",
+		"description" : "The Chess Club is the center of chess activity at the University of Pittsburgh"
+	},
+	{
+		"name" : "Chinese Card Games Club",
+		"description" : "Come learn and play some really fun and competitive traditional Chinese card games with some cool people!"
+	},
+	{
+		"name" : "Geology Club",
+		"description" : "The GeoClub is a community for students interested in the Earth Sciences, which include, but are not limited to, Geology, Environmental Science and Studies. It's a fun group of people who are enthusiastic about rocks, the Earth, and the environment! We do lab help, powerpoint nights, kahoot games, and go on adventures (as well as other things!)"
+	},
+	{
+		"name" : "Kappa Delta Pi",
+		"description" : "Kappa Delta Pi is an International Honor Society in Education. Newly reinstalled at the University in April 2015, KDP is striving for excellence.  As the School of Education at Pitt continues to grow, we hope that this organization will grow with it as we make an impression not only on the University, but the community surrounding us.  Through volunteer and service projects we, as future teachers, hope to give back to our local children and gain experience as we tackle the field we want to one day make a difference with in our own classrooms."
+	},
+	{
+		"name" : "Math Club",
+		"description" : "The Math Club is an organization designed to bring together students of the mathematical sciences in an environment that allows them to pursue their collective interests!"
+	},
+	{
+		"name" : "Quo Vadis",
+		"description" : "Nationality Room tours"
+	},
+	{
+		"name" : "Chess Club",
+		"description" : "The Chess Club is the center of chess activity at the University of Pittsburgh"
+	},
+	{
+		"name" : "Chinese Card Games Club",
+		"description" : "Come learn and play some really fun and competitive traditional Chinese card games with some cool people!"
+	},
+	{
+		"name" : "Geology Club",
+		"description" : "The GeoClub is a community for students interested in the Earth Sciences, which include, but are not limited to, Geology, Environmental Science and Studies. It's a fun group of people who are enthusiastic about rocks, the Earth, and the environment! We do lab help, powerpoint nights, kahoot games, and go on adventures (as well as other things!)"
+	},
+	{
+		"name" : "Kappa Delta Pi",
+		"description" : "Kappa Delta Pi is an International Honor Society in Education. Newly reinstalled at the University in April 2015, KDP is striving for excellence.  As the School of Education at Pitt continues to grow, we hope that this organization will grow with it as we make an impression not only on the University, but the community surrounding us.  Through volunteer and service projects we, as future teachers, hope to give back to our local children and gain experience as we tackle the field we want to one day make a difference with in our own classrooms."
+	},
+	{
+		"name" : "Math Club",
+		"description" : "The Math Club is an organization designed to bring together students of the mathematical sciences in an environment that allows them to pursue their collective interests!"
+	},
+	{
+		"name" : "Quo Vadis",
+		"description" : "Nationality Room tours"
+	}
+]

@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 
-import { environment } from 'src/environments/environment';
 import { IClub } from '../interfaces/club';
+import { ClubSearchService } from '../services/club-search.service';
 
 @Component({
   selector: 'app-clubs-container',
@@ -13,14 +12,15 @@ export class ClubsContainerComponent implements OnInit {
   infoPanelVisible: boolean = true;
   clubs: IClub[] = [];
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private readonly clubSearchService: ClubSearchService) {}
 
   ngOnInit(): void {
-    //Get list of clubs from backend
-    this.httpClient.get<IClub[]>(`${environment.apiUrl}/clubs`)
-    .subscribe(data => {
-      this.clubs = data;
-      console.log(this.clubs);
-    });
+    //Tell NgRx store to fetch clubs from the backend
+    this.clubSearchService.getClubs();
+
+    //Asynchronously update the list of clubs whenever it changes
+    this.clubSearchService.clubs$.pipe().subscribe(clubs => {
+		  this.clubs = clubs;
+		});   
   }
 }

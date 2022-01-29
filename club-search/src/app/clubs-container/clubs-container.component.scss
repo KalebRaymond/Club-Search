@@ -2,11 +2,24 @@
     width: 100%;
 }
 
-.cards-container {
-    box-sizing: border-box;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    max-height: 100%;
-    padding: 1rem;
+.content-container {
+    display: flex;
+
+    .cards-container {
+        box-sizing: border-box;
+        display: grid;
+        flex-shrink: 2;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        max-height: 100%;
+        min-width: 60%;
+        padding: 1rem;
+        width: 100%;
+    }
+    
+    .club-info-container {        
+        flex-grow: 2;
+        max-width: 40%;
+        width: 40%;
+    }
 }

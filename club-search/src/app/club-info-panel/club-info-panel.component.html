@@ -1,2 +1,9 @@
 <div class="panel">
+    <span class="x-button" (click)="closePanel()">
+        <img src="/assets/img/x-white.svg">
+    </span>
+    <ng-container *ngIf="selectedClub != null">
+        <span>{{ selectedClub.name }}</span>
+        <p>{{ selectedClub.description }}</p>
+    </ng-container>
 </div>

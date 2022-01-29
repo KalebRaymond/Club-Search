@@ -5,14 +5,14 @@ import { IClub } from '../interfaces/club';
 import * as Actions from "./club-search.actions";
 
 export interface IState {
-    selectedClub: IClub,
+    selectedClub: IClub | null,
     clubs: IClub[],
 }
 
 export const initialState: IState = {
     selectedClub: {
-        name: "",
-        description: ""
+        name: "Test",
+        description: "Mock data for testing. Lorem ipsum dolor."
     },
     clubs: []
 }
@@ -30,6 +30,12 @@ export function reducer(existingState: IState, action: Action) {
             on(Actions.getClubsFailure, (state, {error}): IState => {
                 console.log("Failed to retrieve clubs from backend: ", error);
                 return state;
+            }),
+            on(Actions.deselectClub, (state): IState => {
+                return {
+                    ...state,
+                    selectedClub: null
+                };
             })
     )(existingState, action);
 }

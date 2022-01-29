@@ -15,12 +15,14 @@ import * as Selectors from "../store/club-search.selector";
 })
 export class ClubSearchService {
     clubs$: Observable<IClub[]> = new Observable<IClub[]>();
+    selectedClub$: Observable<IClub | null> = new Observable<IClub | null>();
 
     constructor(
         private readonly httpClient: HttpClient,
         private readonly store: Store<IState>
     ) {
         this.clubs$ = this.store.pipe(select(Selectors.getClubs));
+        this.selectedClub$ = this.store.pipe(select(Selectors.getSelectedClub));
     }
 
     getClubs(): void {
@@ -30,5 +32,9 @@ export class ClubSearchService {
 
     _getClubs(): Observable<IClub[]> {
         return this.httpClient.get<IClub[]>(`${environment.apiUrl + environment.apiPath.clubs}`);
+    }
+
+    deselectClub(): void {
+        this.store.dispatch(Actions.deselectClub());
     }
 } 

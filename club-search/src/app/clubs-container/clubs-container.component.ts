@@ -11,6 +11,7 @@ import { ClubSearchService } from '../services/club-search.service';
 export class ClubsContainerComponent implements OnInit {
   infoPanelVisible: boolean = true;
   clubs: IClub[] = [];
+  selectedClub: IClub | null = null;
 
   constructor(private readonly clubSearchService: ClubSearchService) {}
 
@@ -21,6 +22,11 @@ export class ClubsContainerComponent implements OnInit {
     //Asynchronously update the list of clubs whenever it changes
     this.clubSearchService.clubs$.pipe().subscribe(clubs => {
 		  this.clubs = clubs;
+		});
+    
+    //Asynchronously update the selected club whenever it changes
+    this.clubSearchService.selectedClub$.pipe().subscribe(club => {
+		  this.selectedClub = club;
 		});   
   }
 }

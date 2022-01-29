@@ -5,9 +5,7 @@
             [description]="club.description">
         </app-club-card>
     </div>
-    <!--
-    <div class="club-info-container" *ngIf="infoPanelVisible">
-        <app-club-info-panel></app-club-info-panel>
+    <div class="club-info-container" *ngIf="selectedClub != null">
+        <app-club-info-panel [selectedClub]="selectedClub"></app-club-info-panel>
     </div>
-    -->
 </div>

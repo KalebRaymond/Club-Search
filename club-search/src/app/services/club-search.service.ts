@@ -34,6 +34,10 @@ export class ClubSearchService {
         return this.httpClient.get<IClub[]>(`${environment.apiUrl + environment.apiPath.clubs}`);
     }
 
+    selectClub(club: IClub): void {
+        this.store.dispatch(Actions.selectClub({selectedClub: club}));
+    }
+
     deselectClub(): void {
         this.store.dispatch(Actions.deselectClub());
     }

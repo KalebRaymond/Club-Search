@@ -1,8 +1,7 @@
 <div class="content-container">
     <div class="cards-container">
         <app-club-card *ngFor="let club of clubs"
-            [name]="club.name"
-            [description]="club.description">
+            [club]="club">
         </app-club-card>
     </div>
     <div class="club-info-container" *ngIf="selectedClub != null">

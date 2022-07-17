@@ -31,6 +31,12 @@ export function reducer(existingState: IState, action: Action) {
                 console.log("Failed to retrieve clubs from backend: ", error);
                 return state;
             }),
+            on(Actions.selectClub, (state, {selectedClub}): IState => {
+                return {
+                    ...state,
+                    selectedClub: selectedClub
+                };
+            }),
             on(Actions.deselectClub, (state): IState => {
                 return {
                     ...state,

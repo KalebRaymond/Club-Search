@@ -27,6 +27,6 @@ export class ClubsContainerComponent implements OnInit {
     //Asynchronously update the selected club whenever it changes
     this.clubSearchService.selectedClub$.pipe().subscribe(club => {
 		  this.selectedClub = club;
-		});   
+		});
   }
 }

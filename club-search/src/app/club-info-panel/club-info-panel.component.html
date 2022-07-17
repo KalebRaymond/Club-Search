@@ -1,9 +1,28 @@
 <div class="panel">
-    <span class="x-button" (click)="closePanel()">
-        <img src="/assets/img/x-white.svg">
-    </span>
     <ng-container *ngIf="selectedClub != null">
-        <span>{{ selectedClub.name }}</span>
-        <p>{{ selectedClub.description }}</p>
+        <div class="section club-header">
+            <img class="club-icon" src="https://picsum.photos/96">
+            <span class="club-name">{{ selectedClub.name }}</span>
+            <span class="x-button" (click)="closePanel()">
+                <img src="/assets/img/x-white.svg">
+            </span>
+        </div>
+        <div class="section socials">
+            <span class="social-icon website">
+                <img src="/assets/img/x-white.svg">
+            </span>
+            <span class="social-icon facebook">
+                <img src="/assets/img/x-white.svg">
+            </span>
+            <span class="social-icon twitter">
+                <img src="/assets/img/x-white.svg">
+            </span>
+            <span class="social-icon instagram">
+                <img src="/assets/img/x-white.svg">
+            </span>
+        </div>
+        <div class="section club-description">
+            <p>{{ selectedClub.description }}</p>
+        </div>
     </ng-container>
 </div>

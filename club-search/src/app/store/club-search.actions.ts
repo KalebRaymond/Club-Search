@@ -17,6 +17,11 @@ export const getClubsFailure = createAction(
     props<{error: string}>(),
 );
 
+export const selectClub = createAction(
+    "Select Club",
+    props<{selectedClub: IClub}>(),
+);
+
 export const deselectClub = createAction(
     "Deselect Club",
 );

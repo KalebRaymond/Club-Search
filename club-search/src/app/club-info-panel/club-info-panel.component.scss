@@ -1,13 +1,58 @@
 .panel {
     background-color: #000;
+    color: #fff;
     height: 100%;
+    padding: 1rem;
 
-    .x-button {
-        img {
-            fill: #fff;
+    .section {
+        border-bottom: 2px solid #fff;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
 
-            &:hover {
-                cursor: pointer;
+        &.club-header {
+            .club-icon {
+                border-radius: 100%;
+                margin: 0px auto;
+            }
+    
+            .club-name {
+                font-size: 2rem;
+                margin-left: 1rem;
+                vertical-align: middle;
+            }
+    
+            .x-button {
+                float: right;
+    
+                img {
+                    fill: #fff;
+                    height: 1rem;
+        
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    
+        &.socials {
+            .social-icon {
+                margin: 1rem;
+                margin-left: 0rem;
+    
+                img {
+                    fill: #fff;
+    
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &.club-description {
+            p {
+                margin: 0;
             }
         }
     }

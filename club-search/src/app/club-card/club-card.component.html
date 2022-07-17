@@ -1,9 +1,9 @@
-<div class="card">
+<div class="card" (click)="selectClub()">
     <img class="club-icon" src="https://picsum.photos/96">
-    <div class="club-title-container">
-        <span>{{ name | titlecase }}</span>
+    <div class="club-title-container" *ngIf="club != null">
+        <span>{{ club.name | titlecase }}</span>
     </div>
-    <div class="club-desc-container">
-        <p>{{ description }}</p>
+    <div class="club-desc-container" *ngIf="club != null">
+        <p>{{ club.description }}</p>
     </div>
 </div>
